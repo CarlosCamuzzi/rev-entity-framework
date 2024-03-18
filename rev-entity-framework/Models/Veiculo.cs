@@ -15,9 +15,11 @@ namespace rev_entity_framework.Models
         [Required(ErrorMessage = "Obrigatório informar a placa")]
         public string Placa { get; set; }
 
+        [Display(Name = "Ano de Fabricação")]
         [Required(ErrorMessage = "Obrigatório informar o ano de fabricação")]
         public int AnoFabricacao { get; set; }
 
+        [Display(Name = "Ano do Modelo")]
         [Required(ErrorMessage = "Obrigatório informar o ano do modelo")]
         public int AnoModelo { get; set; }  
     }
